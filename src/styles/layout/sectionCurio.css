@@ -4,6 +4,7 @@
 
 .list-curiosidades {
     grid-column: 2 / 4;
+    padding-right: 40px;
 }
 
 .list-curiosidades dt {
@@ -26,12 +27,31 @@
     margin-bottom: 5px;
 }
 
+
 .list-curiosidades dd {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 15px;
     text-indent: 40px;
+}
+/* Inserindo manipulação no JavaScript */
+[data-accordion="accordion"] dd {
+    display: none;
+}
+
+[data-accordion="accordion"] dd.ativo {
+    display: block;
+}
+
+[data-accordion="accordion"] dt::after {
+    content: "⬎";
+    margin-left: 10px;
+}
+
+[data-accordion="accordion"] dt.ativo::after {
+    content: "⬏";
+    margin-left: 10px;
 }
 
 /* Responsicidade */
