@@ -11,6 +11,7 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    user-select: none;  /* impede que o usuário selecione o texto ou outros elementos da pagina */
 
 }
 
