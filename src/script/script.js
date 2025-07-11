@@ -1,3 +1,4 @@
 import initTab from "./modules/tabNavigation.js";
-
-initTab()
+import initMenuMobile from "./modules/menuMobile.js";
+initTab();
+initMenuMobile();
